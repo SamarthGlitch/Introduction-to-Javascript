@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Scoping of Functions in JS</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <button type="button" onclick="myFunction()">14x6</button>
+    <script>
+        //b is global
+        var b=14;
+        function myFunction(){
+            //a is local
+            var a=6;
+            document.getElementById("demo").innerHTML=b*a
+        }
+        document.getElementById("demo1").innerHTML=a
+    </script>
+</body>
+</html>

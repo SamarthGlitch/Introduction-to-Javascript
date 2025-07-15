@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Loops</title>
+    <style>
+            html{
+                font-family: monospace;
+            }
+            body{
+                background-color: rgb(73, 73, 73);
+                color: white;
+                font-size: 270%;
+            }
+            .anitext{
+            font-size: 150%;
+            background: radial-gradient(circle, rgb(255, 139, 30), rgb(204, 0, 255));
+            background-clip: text;
+            color: transparent;
+            animation: anitext 15s linear infinite;
+            background-size: 200% 200%;
+            }
+            .acentr{
+                text-align:center;
+            }
+            @keyframes anitext{
+                0%{background-position: 0% 0%;}
+                50%{background-position: 100% 100%;}
+                100%{background-position: 0% 0%;}
+            }
+        </style>
+</head>
+<body>
+    <h1 class="anitext">Javascript Loops</h1>
+    <script>
+        var fruits = ["Apple", "Banana", "Grapes", "Orange", "Watermelon", "Jackfruit", "Passionfruit", "Mango", "Starfruit"]
+        for (i=0; i<fruits.length; i++) {
+            var text = fruits[i] + "<br>";
+            document.write(text);
+        }
+    </script>
+</body>
+</html>

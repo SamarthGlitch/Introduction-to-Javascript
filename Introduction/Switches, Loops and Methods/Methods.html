@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>String Methods</title>
+    <style>
+            html{
+                font-family: monospace;
+            }
+            body{
+                background-color: rgb(73, 73, 73);
+                color: white;
+            }
+            .anitext{
+            font-size: 350%;
+            background: radial-gradient(circle, rgb(255, 139, 30), rgb(204, 0, 255));
+            background-clip: text;
+            color: transparent;
+            animation: anitext 15s linear infinite;
+            background-size: 200% 200%;
+            }
+            .acentr{
+                text-align:center;
+            }
+            @keyframes anitext{
+                0%{background-position: 0% 0%;}
+                50%{background-position: 100% 100%;}
+                100%{background-position: 0% 0%;}
+            }
+        </style>
+</head>
+<body>
+    <h1 class="anitext">Javasript String Methods</h1>
+    <script>
+        var str="Amazing";
+        document.write(str.toUpperCase());
+        document.write("<br>");
+        document.write(str.toLowerCase());
+        document.write("<br>");
+        document.write(str.startsWith("i"));
+        document.write("<br>");
+            var str1="about";
+            var patt=new RegExp("about");
+            var res=patt.test(str);
+            document.write(res)
+        document.write("<br>");
+            var patt1=new RegExp("about");
+            var res1=patt1.test(str1);
+            document.write(res1)
+    </script>
+</body>
+</html>
