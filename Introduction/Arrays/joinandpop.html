@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Jaascript join and pop methods</title>
+</head>
+<body>
+    <h1>join() and pop()</h1>
+    <p id="myjoin"></p>
+    <p id="firstpop"></p>
+    <p id="scndpop"></p>
+    <script>
+        var fruits=["Banana", "Apple", "Orange", "Mango"];
+        document.getElementById("myjoin").innerHTML=fruits.join(" * ");
+        document.getElementById("firstpop").innerHTML=fruits;
+        fruits.pop();
+        document.getElementById("scndpop").innerHTML=fruits;
+    </script>
+</body>
+</html>
