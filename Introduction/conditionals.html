@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Conditional Statements in JS</title>
+</head>
+<body>
+    <button onclick="cTime()">Click me!</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        function cTime(){
+            var greeting;
+            var time = new Date().getHours();
+
+            if (time < 10){
+                greeting = "Good Morning";
+            } else if (time < 17){
+                greeting = "Good Afternoon";
+            } else{
+                greeting = "Good Evening";
+            }
+            document.getElementById("p1").innerHTML = "Current Hour is: " + time;
+            document.getElementById("p2").innerHTML = greeting;
+        }
+    </script>
+</body>
+</html>
