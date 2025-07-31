@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <p id="manager"></p>
+    <script>
+        class Employee{
+            constructor(employment){
+                this.job=employment;
+            }
+            work(){
+                return this.job + ' is supervising';
+            }
+        }
+        
+        manager= new Employee("Manager");
+        document.getElementById("manager").innerHTML=manager.work();
+    </script>
+</body>
+</html>
