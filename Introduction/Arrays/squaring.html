@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        var x = [1, 2, 3, 4, 5, 6];
+        function expo(sqr){
+            return Math.pow(sqr, 2);
+        }
+        var sqred = x.map(expo);
+        document.getElementById("result").innerHTML=sqred
+    </script>
+</body>
+</html>

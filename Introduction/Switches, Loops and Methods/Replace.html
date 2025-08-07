@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Replace</title>
+</head>
+<body>
+    <h1>Javascript String Methods</h1>
+    <p id="search_result"></p>
+    <p id="replace_result"></p>
+    <p id="string_result"></p>
+
+    <script>
+        var str = "hello ho are u doing for that day";
+        var search_position = str.search("doing");
+        var txt = str.replace("ho are u", "how are you")
+        var x = 70;
+        var y = 90;
+        document.getElementById("search_result").innerHTML=search_position;
+        document.getElementById("replace_result").innerHTML=txt;
+        document.getElementById("string_result").innerHTML=String(x) + String(y);
+    </script>
+</body>
+</html>

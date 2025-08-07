@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Celcius to Farenheit</title>
+</head>
+<p id="F"></p>
+<body>
+    <script>
+        let celsius = [0, 20, 30];
+        //F = C × 1.8 + 32
+        function ctof(temp){
+            return temp*1.8 + 32
+        }
+        var tempnew = celsius.map(ctof);
+        document.getElementById("F").innerHTML=tempnew;
+    </script>
+</body>
+</html>
