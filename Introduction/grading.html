@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Grading</title>
+    </head>
+    <body>
+        <fieldset>
+        <legend><h1>Grading</h1></legend>
+        <form>
+            <label>Name:</label>
+            <input id="name" name="Name" type="text">
+                <br>
+            <label>Total Marks:(max 300)</label>
+            <input id="marks" name="Marks" type="number">
+                <br>
+            <button onclick="myFunction()">Submit</button>
+            </form>
+        </fieldset>
+        <script>
+            function myFunction(){
+                var Name = document.getElementById("name").value;
+                var Marks = document.getElementById("marks").value;
+                if (Marks<=40){
+                    document.getElementById().inner(Name + " has F grade")
+                } else if(Mark<=70){
+                    alert(Name + " has D grade")
+                } else if(Marks<=110){
+                    alert(Name + " has C grade")
+                } else if(Marks<=180){
+                    alert(Name + "")
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Javascript Callback</title>
+</head>
+<body>
+    <h1>Javascript Callbacks</h1>
+    <p id="result"></p>
+    <script>
+        function myDisplayer(value){
+            document.getElementById("result").innerHTML=value;
+        }
+        function myCalc(num1, num2, myCallback){
+            let sum = num1 + num2;
+            myCallback(sum);
+        }
+        myCalc(5, 5, myDisplayer);
+    </script>
+</body>
+</html>
